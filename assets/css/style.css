@@ -1,11 +1,78 @@
-body{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
 
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
 }
 
 header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 10px 0px;
+    align-items: center;
+    background-color: rgb(46, 51, 59);
+    color: rgb(137, 210, 223);
+}
 
+nav{
+    display: block;
+} 
+
+nav ul{
+    display:flex;
+    justify-content: space-evenly;
+    min-width: 500px;
+    list-style: none;
+    font-size: 20px;
+}
+
+nav a{
+    color: rgb(137, 210, 223);
+    font-weight: bold;
+    text-decoration: none;
 }
 
 h1{
+    display: flex;
+    width: 350px; 
+    height: 50px; 
+    margin:3px; 
+    color: rgb(39, 46, 51);
+    background-color: rgb(137, 210, 223);
+    font-size: 200%;
+    justify-content: right;
+}
+
+subsec{
+    height: 240px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url(../images/02-hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
     
+}
+
+h2{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 850px;
+    height: 40px;
+    /* width: 350px; */
+    /* height: 100px; */
+    /* align-items: flex-end; */
+    background-color: rgb(137, 210, 223);
+    color: rgb(39, 46, 51);
+    margin-top: 11%;
+    margin-left: 41%;
+    margin-right: 5%;
+    justify-content: space-around;
+    font-size: 25px;
 }
