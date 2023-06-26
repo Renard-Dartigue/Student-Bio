@@ -31,12 +31,18 @@ nav ul{
     min-width: 500px;
     list-style: none;
     font-size: 20px;
+    flex-wrap: wrap;
 }
 
 nav a{
     color: rgb(137, 210, 223);
-    font-weight: bold;
+    font-weight: 100;
     text-decoration: none;
+    border-bottom: 3px solid;
+}
+
+a:visited{
+    color: rgb(137, 210, 223);
 }
 
 h1{
@@ -50,6 +56,7 @@ h1{
     justify-content: right;
 }
 
+/* This subsec is for the background */
 subsec{
     height: 240px;
     width: 100%;
@@ -57,14 +64,17 @@ subsec{
     background-image: url(../images/02-hero-bg.jpg);
     background-size: cover;
     background-position: center;
+    flex: wrap;
     
 }
+
 
 h2{
     display: flex;
     flex-direction: row-reverse;
-    width: 850px;
-    height: 40px;
+    flex-wrap: wrap;
+    /* width: 850px;
+    height: 40px; */
     /* width: 350px; */
     /* height: 100px; */
     /* align-items: flex-end; */
@@ -72,7 +82,47 @@ h2{
     color: rgb(39, 46, 51);
     margin-top: 11%;
     margin-left: 41%;
-    margin-right: 5%;
+    margin-right: 7%;
     justify-content: space-around;
     font-size: 25px;
+    
+}
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+section{
+    display: flex;
+    padding: 2px 2px;
+}
+
+
+
+p{
+    display: flex;
+    flex: wrap;
+    margin: 2% 1%;
+    font-size: 16px;
+    align-items: right;
+}
+
+h3{
+    justify-content: left;
+    border-right: 5px;
+    display: block;
+    align-items: left;
+    text-align: end;
+    font-size: 200%;
+    margin: 1% 2%;
+}
+
+
+
+section ul li{
+
 }
