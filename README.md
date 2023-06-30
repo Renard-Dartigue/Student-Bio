@@ -1,5 +1,5 @@
 # Student-Bio
-This is my student bio page
+#This is my student bio page
 
 ##Description 
 This page was created to share information about myself, document my work, and share links to my social media. As of right now it still need some additional information/data that will be included later.
@@ -8,7 +8,7 @@ This page was created to share information about myself, document my work, and s
 N/A
 
 ##Usage
-
+https://renard-dartigue.github.io/Student-Bio/
 
 ##Credits
 N/A
@@ -34,3 +34,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+##Screenshot 
+![alt-text](./assets/images/_G__ProBootcamp_UCF_projects_Student-Bio_index.html.png)

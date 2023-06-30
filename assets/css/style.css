@@ -99,19 +99,20 @@ h2{
 /* MAIN=======================================================================================================
 ============================================================================================================== */
 
-/* main{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-} */
-
+/*  */
 section{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     padding: 2px 2px;
     padding-right: 15px;
 
+}
+
+.about-me{
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 70%;
+    flex-wrap: wrap;
 }
 
 p{
@@ -119,6 +120,7 @@ p{
     margin-bottom: 15px;
     color: #435773;
     padding-right: 10%;
+
 }
 
 
@@ -126,11 +128,12 @@ p{
 
 h3{
     justify-content: left;
-    /* flex-basis: 20%; */
+    flex-basis: 20%;
     border-right: 3px solid #445877;
     display: block;
     text-align: right;
     font-size: 200% ;
+    margin-right: 30px;
     margin: 1% 2%;
     padding-right: 15px;
     line-height: 1.1;
@@ -144,8 +147,38 @@ h3{
     display:flex;
     flex-direction:row;
     flex: 0 0 70%;
+    flex-wrap: wrap;
 
 }
+
+
+.card-column {
+    flex: 1 0 100%;
+    padding: 1.5rem;
+    transition: flex-basis 500ms linear;
+    margin-bottom: 1.5rem;
+}
+
+
+
+.code-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+    padding: 20px;
+    margin-left: -25px;
+    background-color: #9CD9D9;
+    color: #30353D;
+    outline: 2px dashed var(--gin);
+    outline-offset: -2px;
+    transition: all 0.5s ease-in-out;
+}
+
+h4{
+    font-size: 23px;
+}
+
 
 .workOne{
     background-image: url("../images/02-portfolio-4.jpg");
@@ -182,16 +215,18 @@ h3{
     display:flex;
     flex-wrap: wrap;
     align-items: flex-end;
-    flex-basis: calc(50% - 1em);
+    flex-basis: calc(50% - 0em);
     border-style: solid;
     border-color: #9CD9D9;
+    text-decoration: none;
     /* background-size: 150%; */
     
 }
 
 .flexitem:first-child{
     min-height: 400px;
-    width: 100%;
+    /* width: 100%; */
+    flex-basis: 100%;
 }
 
 
@@ -210,10 +245,77 @@ article{
 
 }
 
-/* .list{
+
+/* FOOTER================================================================ */
+
+/* footer{
+    display: flex; */
+    /* changed from space even to left */
+    /* justify-content: left;
+    padding: 40px 10px 40px 0px;
+    align-items: center;
+    background-color: #ffffff;
+    color: #9CD9D9;
+} */
+
+/* footer{
+    display: flex;
+    flex-direction: row;
+    padding: 2px 2px;
+    padding-right: 15px;
+} */
+
+
+figure{
+    display: flex;
+    align-items: center;
+    
+}
+
+/* footer h3{
+    justify-content: left;
+    flex-basis: 20%;
+    border-right: 3px solid #445877;
+    display: block;
+    text-align: right;
+    font-size: 200% ;
+    margin: 1% 2%;
+    margin-right: 30px;
+    padding-right: 15px;
+    line-height: 1.1;
+    color:#435773;
+
+} */
+
+figure ul{
     display:flex;
-    justify-content: center;
-    min-width: 500px;
+    justify-content: space-evenly;
+    flex-direction: row;
+    min-width: 1400px;
+    list-style: none;
+}
+
+figure a{
+    color:#30353D;
+    font-weight: 100;
+    font-style: bold;
+    font-size: 20px;
+    text-decoration: none;
+    border-bottom: 3px solid;
+
+}
+
+figure a:visited{
+    color: #9CD9D9;
+}
+
+.list{
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+}
+    /* min-width: 500px;
     list-style: none;
     font-size: 20px;
     flex-wrap: wrap;
@@ -221,53 +323,3 @@ article{
     font-weight: 100;
     border-bottom: 3px solid;
 } */
-/* FOOTER================================================================ */
-
-footer{
-    display: flex;
-    justify-content: space-evenly;
-    padding: 10px 10px 10px 0px;
-    align-items: center;
-    background-color: #ffffff;
-    color: #9CD9D9;
-}
-
-
-figure{
-    display: flex;
-}
-
-footer h3{
-    justify-content: left;
-    flex-basis: 20%;
-    border-right: 3px solid #445877;
-    /* display: block; */
-    text-align: right;
-    font-size: 200% ;
-    margin: 1% 2%;
-    padding-right: 15px;
-    line-height: 1.1;
-    color:#435773;
-
-}
-
-figure ul{
-    display:flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    min-width: 500px;
-    list-style: none;
-    font-size: 20px;
-    flex-wrap: wrap;
-}
-
-figure a{
-    color:#30353D;
-    font-weight: 100;
-    text-decoration: none;
-    border-bottom: 3px solid;
-}
-
-figure a:visited{
-    color: #9CD9D9;
-}
